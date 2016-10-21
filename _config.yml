@@ -1,0 +1,124 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: lonlone
+subtitle:
+description:
+author: Lonlone
+language: zh-Hans
+#language: en
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://lonlonelong.github.io
+root: /
+#permalink: :year/:month/:day/:title/
+#permalink: :year-:month-:day-:title.html
+permalink: :category/:title.html
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+    编程： programming
+    生活： life
+    其他： other
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 5
+pagination_dir: page
+
+
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+Plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
+- hexo-generator-index 
+- hexo-generator-archive 
+- hexo-generator-category 
+- hexo-generator-tag 
+- hexo-server
+- hexo-deployer-git
+- hexo-deployer-heroku 
+- hexo-deployer-rsync
+- hexo-deployer-openshift
+- hexo-renderer-marked 
+- hexo-renderer-stylus
+- hexo-generator-search 
+#sitemap
+sitemap:
+  path: /sitemap.xml
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+## Themes: https://hexo.io/themes/
+theme: yele
+#scheme: Pisces
+
+# 百度统计 
+# 使用博客模板请去掉或者更换 id 
+#baidu:
+ #   id: 849a2e3396d7efe6e9e8a86635c280b1  
+# Google Analytics
+# 使用博客模板请去掉或者更换 id
+#ga:
+ #   id: UA-85910415-1  
+ #   host: auto 
+    
+#### Analytics
+google_analytics:
+  enable: true
+  id: UA-85910415-1
+## e.g. UA-1766729-8 your google analytics ID.
+  site: auto
+
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  #repository: http://github.com/lonlonelong/lonlonelong.github.io.git
+  repository: http://github.com/lonlonelong/lonlonelong.github.io.git
+  branch: master

@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: http://lonlonelong.github.io/sitemap.xml

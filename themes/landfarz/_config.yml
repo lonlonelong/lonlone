@@ -1,0 +1,28 @@
+menu:
+  其它教程: /misc
+  书单: /booklist
+  开发者: /developer
+  归档页: https://github.com/lonlonelong/it-ebooks-archive
+  关于: /about
+  龙: http://lonlonelong.github.io
+  RSS: /atom.xml
+  "fork me on github": https://github.com/lonlonelong/lonlonelong.github.io
+
+sidebar: right
+widgets:
+- about
+- support
+- link
+- account
+
+# Duoshuo
+duoshuo_shortname: lonlone
+
+fancybox: true
+
+google_analytics:
+rss: /atom.xml
+
+google_site_verification: NCXVSqxqB-os803-VFMtIEd1SUNJVOIjctCfNYUwD0w
+baidu_site_verification: 
+icon: 
